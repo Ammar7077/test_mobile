@@ -13,6 +13,76 @@ class HomePage extends StatelessWidget {
         body: Column(
           children: [
             Text("HomePage".tr()),
+            Stack(
+              children: [
+                Column(
+                  children: [
+                    SizedBox(
+                      height: 100,
+                      child: Card(
+                        color: Colors.green,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.abc),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text(
+                              "AAA",
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 100,
+                      child: Card(
+                        color: Colors.grey,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "ssssssssssssssssssssssssssssssss",
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Positioned(
+                  right: -30,
+                  top: 60,
+                  child: SizedBox(
+                    height: 80,
+                    width: 80,
+                    child: CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: Card(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 60,
+                  left: -30,
+                  child: SizedBox(
+                    height: 80,
+                    width: 80,
+                    child: CircleAvatar(
+                      backgroundColor: Colors.white,
+                      child: Card(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
